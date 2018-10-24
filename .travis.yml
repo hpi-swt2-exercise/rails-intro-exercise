@@ -1,0 +1,12 @@
+language: ruby
+cache: bundler
+script:
+ - RAILS_ENV=test bundle exec rails db:migrate
+ - bundle exec rspec spec/
+before_install:
+ - python -V
+ - pip -V
+ - sudo pip install -r travis/requirements.txt
+ - python ./travis/try_issues.py
+after_success:
+ - ./travis/travis_commands
