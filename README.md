@@ -7,7 +7,7 @@ We prepared an application stub of an academic paper management system for you t
 Follow these steps to complete the software and the exercise:
 ## 1) Set up your repository
 
-* Log-in to [Travis CI](http://travis-ci.org) and enable automatic builds for your exercise repository (add the hpi-swt2-exercise group to the list on the left and flip the switch)
+* Log-in to [Travis CI](http://travis-ci.org) and enable automatic builds for your exercise repository (add the `swt2-intro-exercise` organization on the left, sync your account and flip the switch)
 <img src="./travis/activate_travis.png" alt="drawing" width="600"/>
 
 * Ensure that the issue tracker of the repository is active. This can be done in the repository's "Settings" tab.
