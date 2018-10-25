@@ -10,7 +10,6 @@ Follow these steps to complete the software and the exercise:
 * Log-in to [Travis CI](http://travis-ci.org) and enable automatic builds for your exercise repository
   * It might be necessary to add the `swt2-intro-exercise` organization on the left and to sync your account
   * If you're having issues activating Travis, try using the following URL: https://travis-ci.com/swt2-intro-exercise/rails-exercise-18-YOUR_GH_USER_HERE (replacing `YOUR_GH_USER_HERE` with your GitHub user name)
-<img src="./travis/activate_travis.png" alt="drawing" width="600"/>
 
 * Ensure that the issue tracker of the GitHub repository is active. This can be done in the repository's "Settings" tab on the GitHub website.
 <img src="./travis/gh_issues_setting.png" alt="drawing" width="600"/>
