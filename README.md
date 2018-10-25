@@ -55,6 +55,7 @@ rails s -b 0 #starting rails server, the -b part is necessary since the app is r
 ## 3) Dive into the code
 
 * Run `bundle install` to install the dependencies of the project (they are stored in the `Gemfile`)
+  * If the `bundle` command was not found, install bundler with `gem install bundler`
 * Run `rails db:migrate RAILS_ENV=development && rails db:migrate RAILS_ENV=test` to migrate the database
 * Run `rspec` to run the tests ([RSpec](http://rspec.info/) is a test framework for Ruby)
 * Try to get the failing test green.
