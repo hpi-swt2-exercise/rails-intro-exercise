@@ -1,8 +1,8 @@
-# SWT2 2018/19 - Introductory Exercise
+# SWT2 2019/20 - Introductory Exercise
 
-This is an interactive [Ruby on Rails 5](https://rubyonrails.org/) exercise, based partly on the ["Getting Started with Rails"](https://guides.rubyonrails.org/getting_started.html) guide. Interactivity is provided by opening issues in the GitHub issue tracker (through a CI server) that contain instructions on what tasks to tackle next.
+This is an interactive [Ruby on Rails 5](https://guides.rubyonrails.org/v5.0/) exercise aimed introducing the basics of web development, used in the course [SWTII](https://hpi.de/plattner/teaching/winter-term-201920/softwaretechnik-ii.html). It is based partly on the offical ["Getting Started with Rails"](https://guides.rubyonrails.org/v5.0/getting_started.html) guide, so in case of getting stuck, that might be a good start to find solutions. The interactivity of this exercise is provided by opening issues in the GitHub issue tracker (through automation in a [CI server](https://en.wikipedia.org/wiki/Continuous_integration#Rationale)). The tickets contain the currently failing test case and the corresponding error message as well as instructions on what tasks to tackle next.
 
-We prepared an application stub of an academic paper management system for you that has a failing test case.
+This repository contains an application stub of an academic paper management system with a failing test case.
 
 Follow these steps to complete the software and the exercise:
 ## 1) Set up your repository
