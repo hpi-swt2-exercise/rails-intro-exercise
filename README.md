@@ -7,9 +7,9 @@ This repository contains an application stub of an academic paper management sys
 Follow these steps to complete the software and the exercise:
 ## 1) Set up your repository
 
-* Log-in to [Travis CI](http://travis-ci.org) and enable automatic builds for your exercise repository
-  * It might be necessary to add the `swt2-intro-exercise` organization on the left and to sync your account
+* Log-in / Sign-up with [travis-ci.com](http://travis-ci.com) and enable automatic builds for your exercise repository
   * If you're having issues activating Travis, try using the following URL: https://travis-ci.com/swt2-intro-exercise/rails-exercise-18-YOUR_GH_USER_HERE (replacing `YOUR_GH_USER_HERE` with your GitHub user name)
+  * It might be necessary to use the "sync account" function from your Travis CI [account page](https://travis-ci.com/account/repositories)
 
 * Ensure that the issue tracker of the GitHub repository is active. This can be done in the repository's "Settings" tab on the GitHub website.
 <img src="./travis/gh_issues_setting.png" alt="drawing" width="600"/>
