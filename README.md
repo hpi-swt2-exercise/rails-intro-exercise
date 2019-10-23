@@ -1,6 +1,6 @@
 # SWT2 2019/20 - Introductory Exercise
 
-This is an interactive [Ruby on Rails 5](https://guides.rubyonrails.org/v5.0/) exercise aimed introducing the basics of web development, used in the course [SWTII](https://hpi.de/plattner/teaching/winter-term-201920/softwaretechnik-ii.html). It is based partly on the offical ["Getting Started with Rails"](https://guides.rubyonrails.org/v5.0/getting_started.html) guide, so in case of getting stuck, that might be a good start to find solutions. The interactivity of this exercise is provided by opening issues in the GitHub issue tracker (through automation in a [CI server](https://en.wikipedia.org/wiki/Continuous_integration#Rationale)). The tickets contain the currently failing test case and the corresponding error message as well as instructions on what tasks to tackle next.
+This is an interactive [Ruby on Rails 5](https://guides.rubyonrails.org/v5.2/) exercise aimed introducing the basics of web development, used in the course [SWTII](https://hpi.de/plattner/teaching/winter-term-201920/softwaretechnik-ii.html). It is based partly on the offical ["Getting Started with Rails"](https://guides.rubyonrails.org/v5.2/getting_started.html) guide, so in case of getting stuck, that might be a good start to find solutions. The interactivity of this exercise is provided by opening issues in the GitHub issue tracker (through automation in a [CI server](https://en.wikipedia.org/wiki/Continuous_integration#Rationale)). The tickets contain the currently failing test case and the corresponding error message as well as instructions on what tasks to tackle next.
 
 This repository contains an application stub of an academic paper management system with a failing test case.
 
@@ -8,7 +8,7 @@ Follow these steps to complete the software and the exercise:
 ## 1) Set up your repository
 
 * Log-in / Sign-up with [travis-ci.com](http://travis-ci.com) and enable automatic builds for your exercise repository
-  * If you're having issues activating Travis, try using the following URL: https://travis-ci.com/swt2-intro-exercise/rails-exercise-18-YOUR_GH_USER_HERE (replacing `YOUR_GH_USER_HERE` with your GitHub user name)
+  * If you're having issues activating Travis, try using the following URL: https://travis-ci.com/swt2-intro-exercise/rails-exercise-19-YOUR_GH_USER_HERE (replacing `YOUR_GH_USER_HERE` with your GitHub user name)
   * It might be necessary to use the "sync account" function from your Travis CI [account page](https://travis-ci.com/account/repositories)
 
 * Ensure that the issue tracker of the GitHub repository is active. This can be done in the repository's "Settings" tab on the GitHub website.
@@ -16,14 +16,14 @@ Follow these steps to complete the software and the exercise:
 
 ## 2) Set up local development environment
 
-* Clone the repository to your local machine
+* Clone your exercise repository to your local machine using `git clone`. You might want to clone using [SSH](https://github.com/settings/ssh/new) instead of HTTPS, to avoid having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
 
 ### Option 1: Local setup
 * Change into the newly created directoy
-* Inside the directory, check the used Ruby version using `ruby --version`. It should be `2.5.0`. Other Ruby versions might work, but this is the one that was tested.
+* Inside the directory, check the used Ruby version using `ruby --version`. It should be `2.5.1`. Other Ruby versions might work, but this is the one that was tested.
 * If the correct Ruby version is not used, install a ruby version manager, for example [rbenv](https://github.com/rbenv/rbenv) using the instructions for [rbenv installation](https://github.com/rbenv/rbenv#basic-github-checkout) and [ruby-build installation](https://github.com/rbenv/ruby-build#installing-as-an-rbenv-plugin-recommended).
   * WARNING: If you already have the Ruby version manager [RVM](https://rvm.io/) installed, please use that or uninstall it prior to rbenv installation, as the two version managers are incompatible.
-* Install Ruby version 2.5.0  with `rbenv install 2.5.0` (this might take a few minutes, as Ruby is being compiled)
+* Install Ruby version 2.5.1  with `rbenv install 2.5.1` (this might take a few minutes, as Ruby is being compiled)
 * The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
 
 ### Option 2: Use a Virtual Machine
@@ -35,8 +35,8 @@ vagrant up # download the image and start the VM
 vagrant ssh # connect via ssh
 cd hpi-swt2
 mkdir -p "$(rbenv root)"/plugins && git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-rbenv install 2.5.0 #install current ruby
-ruby --version # check that 2.5.0 is being used
+rbenv install 2.5.1 #install current ruby
+ruby --version # check that 2.5.1 is being used
 bundle install # install dependencies
 exit # restarting the session for changes to take effect
 ```
@@ -48,7 +48,7 @@ cd hpi-swt2
 rails s -b 0 #starting rails server, the -b part is necessary since the app is running in a VM and would otherwise drop the requests coming from the host OS
 ```
 
-* By default, the application is served on port 3000: http://localhost:3000/
+* By default, the application is served on port 3000: `http://localhost:3000/`
 * Edits to files in the local folder will be mirrored into the VM's `hpi-swt2` folder as the folders are synced.
 * We recommend you open one terminal session that runs the development server and another one to execute commands on the machine (e.g. running tests) or use of a terminal multiplexer. Then you do not have to restart the server after each command.
 
@@ -57,18 +57,19 @@ rails s -b 0 #starting rails server, the -b part is necessary since the app is r
 * Run `bundle install` to install the dependencies of the project (they are stored in the `Gemfile`)
   * If the `bundle` command was not found, install bundler with `gem install bundler`
 * Run `rails db:migrate RAILS_ENV=development && rails db:migrate RAILS_ENV=test` to migrate the database
+* Start the development server (`rails s`) and check that the application runs (default: `http://localhost:3000/`)
 * Run `rspec` to run the tests ([RSpec](http://rspec.info/) is a test framework for Ruby)
-* Try to get the failing test green.
+* Write code to get the failing test to pass.
 
 ## 4) Commit and push
 
-* When you are done and the test passes, push your changes.
-* Travis CI will now try to build and test your project.
+* When the tests pass on your local machine, push your changes to GitHub.
+* Travis CI will test your project. You can check the state of the build on the [Travis CI website](https://travis-ci.com/dashboard).
 
 ## 5) Check your inbox / issues
 
 * You will be notified of problems or new exercise work items via GitHub issues on your repository.
-* While you wait, see if your code can use some refactorings, continue reading the tutorial, or plan the next steps.
+* While you wait, see where you could refactor your code, read the [tutorial](https://guides.rubyonrails.org/v5.2/getting_started.html), or explore the project files.
 
 ## 6) For each issue
 
@@ -83,12 +84,11 @@ rails s -b 0 #starting rails server, the -b part is necessary since the app is r
 
 Tips:
 
-* The beginning of this exercise is designed to be solved while reading the official [Rails tutorial](https://guides.rubyonrails.org/getting_started.html)
+* The beginning of this exercise is designed to be solved while reading the official [Getting Started with Rails Guide](https://guides.rubyonrails.org/v5.2/getting_started.html). When stuck, this should be your first read.
+* Start the development server (`rails s`) and try out your app in the browser
 * Run `rspec spec/<path_to_spec>.rb` to only run one set of specs
 * Have a look at `/spec/factories` to get inspiration for your data model
-* Besides [generators](https://guides.rubyonrails.org/command_line.html#rails-generate) and scaffolds, [associations](http://guides.rubyonrails.org/association_basics.html) and [validations](http://guides.rubyonrails.org/active_record_validations.html) are needed
-* Occasionally start up the server (`rails s`) and have a look at the app in your browser
+* Besides [generators](https://guides.rubyonrails.org/v5.2/command_line.html#rails-generate) and scaffolds, [associations](https://guides.rubyonrails.org/v5.2/association_basics.html) and [validations](https://guides.rubyonrails.org/v5.2/active_record_validations.html) are needed
 * Look at the Mockup: https://gomockingbird.com/mockingbird/index.html?project=v890g6l#v890g6l/OQMURm (author selection uses a multiple select in this version of the exercise)
 * `rails db:drop && rails db:migrate` deletes the database and recreates it. This might be helpful for error recovery.
 * Make sure that all local changes are committed (`git status`) and pushed to the upstream repository (i.e., the one on GitHub) before the deadline
-
