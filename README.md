@@ -17,7 +17,7 @@ Follow these steps to complete the software and the exercise:
 ## 2) Set up local development environment
 
 * Clone your exercise repository to your local machine using `git clone`. You might want to clone using [SSH](https://github.com/settings/ssh/new) instead of HTTPS, to avoid having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
-* Please let the teaching team / your fewllow students know if there are problems. Most likely someone esle has had similar issues already and can help.
+* Please let the teaching team / your fellow students know if there are problems. Most likely someone esle has had similar issues already and can help.
 
 ### Option 1: Local setup on Linux or MacOS
 * Change into the newly created directoy
