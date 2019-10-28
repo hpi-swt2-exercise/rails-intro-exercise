@@ -32,7 +32,7 @@ Follow these steps to complete the software and the exercise:
 * Install [Ubuntu](https://www.runrails.com/windows/ruby-on-rails-on-windows-10-in-2019/)
 * Follow the normal Linux installation instructions
 
-### Option 2: Use a Virtual Machine
+### Option 3: Use a Virtual Machine
 * We recommend [Virtualbox](https://www.virtualbox.org/manual/ch02.html) (as a VM provider) and [Vagrant](https://www.vagrantup.com/docs/installation/) (to manage VMs) in combination with a Linux VM. Instructions can be found [here](https://gorails.com/guides/using-vagrant-for-rails-development). Any other container solution will most likely also work.
 * In the container, follow the Linux install instructions.
 * You may want to run the VM in a headless fashion, sharing file systems and using your locally installed tools:
