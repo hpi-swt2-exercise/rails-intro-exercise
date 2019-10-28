@@ -17,8 +17,9 @@ Follow these steps to complete the software and the exercise:
 ## 2) Set up local development environment
 
 * Clone your exercise repository to your local machine using `git clone`. You might want to clone using [SSH](https://github.com/settings/ssh/new) instead of HTTPS, to avoid having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
+* Please let the teaching team / your fewllow students know if there are problems. Most likely someone esle has had similar issues already and can help.
 
-### Option 1: Local setup
+### Option 1: Local setup on Linux or MacOS
 * Change into the newly created directoy
 * Inside the directory, check the used Ruby version using `ruby --version`. It should be `2.5.1`. Other Ruby versions might work, but this is the one that was tested.
 * If the correct Ruby version is not used, install a ruby version manager, for example [rbenv](https://github.com/rbenv/rbenv) using the instructions for [rbenv installation](https://github.com/rbenv/rbenv#basic-github-checkout) and [ruby-build installation](https://github.com/rbenv/ruby-build#installing-as-an-rbenv-plugin-recommended).
@@ -26,31 +27,20 @@ Follow these steps to complete the software and the exercise:
 * Install Ruby version 2.5.1  with `rbenv install 2.5.1` (this might take a few minutes, as Ruby is being compiled)
 * The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
 
+### Option 2: WSL in Windows 10
+* Install the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+* Install [Ubuntu](https://www.runrails.com/windows/ruby-on-rails-on-windows-10-in-2019/)
+* Follow the normal Linux installation instructions
+
 ### Option 2: Use a Virtual Machine
-* Install [Virtualbox](https://www.virtualbox.org/manual/ch02.html) (the VM provider) and [Vagrant](https://www.vagrantup.com/docs/installation/) (to manage VMs) for your platform.
-* Run these commands in the root directory of your cloned repository to download and the prepare the VM image:
-
-```
-vagrant up # download the image and start the VM
-vagrant ssh # connect via ssh
-cd hpi-swt2
-mkdir -p "$(rbenv root)"/plugins && git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-rbenv install 2.5.1 #install current ruby
-ruby --version # check that 2.5.1 is being used
-bundle install # install dependencies
-exit # restarting the session for changes to take effect
-```
-* To start the development server:
-
+* We recommend [Virtualbox](https://www.virtualbox.org/manual/ch02.html) (as a VM provider) and [Vagrant](https://www.vagrantup.com/docs/installation/) (to manage VMs) in combination with a Linux VM. Instructions can be found [here](https://gorails.com/guides/using-vagrant-for-rails-development). Any other container solution will most likely also work.
+* In the container, follow the Linux install instructions.
+* You may want to run the VM in a headless fashion, sharing file systems and using your locally installed tools:
 ```
 vagrant ssh #connect with VM
-cd hpi-swt2
+cd <app_folder>
 rails s -b 0 #starting rails server, the -b part is necessary since the app is running in a VM and would otherwise drop the requests coming from the host OS
 ```
-
-* By default, the application is served on port 3000: `http://localhost:3000/`
-* Edits to files in the local folder will be mirrored into the VM's `hpi-swt2` folder as the folders are synced.
-* We recommend you open one terminal session that runs the development server and another one to execute commands on the machine (e.g. running tests) or use of a terminal multiplexer. Then you do not have to restart the server after each command.
 
 ## 3) Dive into the code
 
@@ -86,6 +76,8 @@ Tips:
 
 * The beginning of this exercise is designed to be solved while reading the official [Getting Started with Rails Guide](https://guides.rubyonrails.org/v5.2/getting_started.html). When stuck, this should be your first read.
 * Start the development server (`rails s`) and try out your app in the browser
+* All available routes of the application can be displayed using `rails routes`
+* For help with RSpec matchers, there is a [Cheat Sheet](https://devhints.io/capybara#rspec) or the [documentation](http://www.rubydoc.info/github/teamcapybara/capybara/#Querying)
 * Run `rspec spec/<path_to_spec>.rb` to only run one set of specs
 * Have a look at `/spec/factories` to get inspiration for your data model
 * Besides [generators](https://guides.rubyonrails.org/v5.2/command_line.html#rails-generate) and scaffolds, [associations](https://guides.rubyonrails.org/v5.2/association_basics.html) and [validations](https://guides.rubyonrails.org/v5.2/active_record_validations.html) are needed
