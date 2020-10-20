@@ -8,8 +8,6 @@ require "active_record/railtie"
 require "active_storage/engine"
 require "action_controller/railtie"
 require "action_mailer/railtie"
-require "action_mailbox/engine"
-require "action_text/engine"
 require "action_view/railtie"
 # require "action_cable/engine"
 require "sprockets/railtie"
@@ -22,9 +20,9 @@ Bundler.require(*Rails.groups)
 module IntroExercise2015
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    # Updated for Rails 6.0: https://guides.rubyonrails.org/upgrading_ruby_on_rails.html#autoloading
-    config.load_defaults 6.0
+    config.load_defaults 5.0
 
+    config.active_record.sqlite3.represent_boolean_as_integer = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
