@@ -57,7 +57,7 @@ rails s -b 0 #starting rails server, the -b part is necessary since the app is r
 ## 5) Check your inbox / issues
 
 * You will be notified of problems or new exercise work items via GitHub issues on your repository.
-* While you wait, see where you could refactor your code, read the [tutorial](https://guides.rubyonrails.org/v5.2/getting_started.html), or explore the project files.
+* While you wait, see where you could refactor your code, read the [tutorial](https://guides.rubyonrails.org/getting_started.html), or explore the project files.
 
 ## 6) For each issue
 
@@ -66,19 +66,19 @@ rails s -b 0 #starting rails server, the -b part is necessary since the app is r
   * The commit message could be `Failing test for #<ISSUE NUMBER>`.
   * There is no need to push the failing commit.
 * Fix the issue and make your test pass. Then commit the changes.
-  * While an issue is open, the exercise will create comments on the issue, notifying you of errors
+  * While an issue is open, the exercise will try to create comments on the issue, notifying you of errors
 
 ## 7) Repeat steps 4 to 6 until the exercise is complete.
 
 Tips:
 
-* The beginning of this exercise is designed to be solved while reading the official [Getting Started with Rails Guide](https://guides.rubyonrails.org/v5.2/getting_started.html). When stuck, this should be your first read.
+* The beginning of this exercise is designed to be solved while reading the official [Getting Started with Rails Guide](https://guides.rubyonrails.org/getting_started.html). When stuck, this should be your first read.
 * Start the development server (`rails s`) and try out your app in the browser
 * All available routes of the application can be displayed using `rails routes`
 * For help with RSpec matchers, there is a [Cheat Sheet](https://devhints.io/capybara#rspec) or the [documentation](http://www.rubydoc.info/github/teamcapybara/capybara/#Querying)
 * Run `rspec spec/<path_to_spec>.rb` to only run one set of specs
 * Have a look at `/spec/factories` to get inspiration for your data model
-* Besides [generators](https://guides.rubyonrails.org/v5.2/command_line.html#rails-generate) and scaffolds, [associations](https://guides.rubyonrails.org/v5.2/association_basics.html) and [validations](https://guides.rubyonrails.org/v5.2/active_record_validations.html) are needed
+* Besides [generators](https://guides.rubyonrails.org/command_line.html#rails-generate) and scaffolds, [associations](https://guides.rubyonrails.org/association_basics.html) and [validations](https://guides.rubyonrails.org/active_record_validations.html) are needed
 * Look at the Mockup: https://gomockingbird.com/mockingbird/index.html?project=v890g6l#v890g6l/OQMURm (author selection uses a multiple select in this version of the exercise)
 * `rails db:drop && rails db:migrate` deletes the database and recreates it. This might be helpful for error recovery.
 * Make sure that all local changes are committed (`git status`) and pushed to the upstream repository (i.e., the one on GitHub) before the deadline
