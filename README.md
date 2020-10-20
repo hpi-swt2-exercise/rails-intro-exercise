@@ -1,6 +1,6 @@
 # SWT2 2019/20 - Introductory Exercise
 
-This is an interactive [Ruby on Rails 5](https://guides.rubyonrails.org/v5.2/) exercise aimed introducing the basics of web development, used in the course [SWTII](https://hpi.de/plattner/teaching/winter-term-201920/softwaretechnik-ii.html). It is based partly on the offical ["Getting Started with Rails"](https://guides.rubyonrails.org/v5.2/getting_started.html) guide, so in case of getting stuck, that might be a good start to find solutions. The interactivity of this exercise is provided by opening issues in the GitHub issue tracker (through automation in a [CI server](https://en.wikipedia.org/wiki/Continuous_integration#Rationale)). The tickets contain the currently failing test case and the corresponding error message as well as instructions on what tasks to tackle next.
+This is an interactive exercise introducing the basics of web development with [Ruby on Rails 6](https://guides.rubyonrails.org/). It is used in the course [SWTII](https://hpi.de/plattner/teaching/winter-term-2020-21/softwaretechnik-ii-agile-software-development-in-large-teams.html). The exercise is partly based on the offical ["Getting Started with Rails"](https://guides.rubyonrails.org/getting_started.html) guide, so in case of getting stuck, that might be a good start to find solutions. The interactivity of this exercise is provided by opening issues in the GitHub issue tracker (through automation in a [CI server](https://en.wikipedia.org/wiki/Continuous_integration#Rationale)). The issues contain the currently failing test case and the corresponding error message as well as instructions on what tasks to tackle next.
 
 This repository contains an application stub of an academic paper management system with a failing test case.
 
@@ -17,15 +17,12 @@ Follow these steps to complete the software and the exercise:
 ## 2) Set up local development environment
 
 * Clone your exercise repository to your local machine using `git clone`. You might want to clone using [SSH](https://github.com/settings/ssh/new) instead of HTTPS, to avoid having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
-* Please let the teaching team / your fellow students know if there are problems. Most likely someone else has had similar issues already and can help.
+* Please let the teaching team/your fellow students know if there are problems. Most likely someone else has had similar issues already and can help.
 
 ### Option 1: Local setup on Linux or MacOS
-* Change into the newly created directoy
-* Inside the directory, check the used Ruby version using `ruby --version`. It should be `2.5.1`. Other Ruby versions might work, but this is the one that was tested.
-* If the correct Ruby version is not used, install a ruby version manager, for example [rbenv](https://github.com/rbenv/rbenv) using the instructions for [rbenv installation](https://github.com/rbenv/rbenv#basic-github-checkout) and [ruby-build installation](https://github.com/rbenv/ruby-build#installing-as-an-rbenv-plugin-recommended).
-  * WARNING: If you already have the Ruby version manager [RVM](https://rvm.io/) installed, please use that or uninstall it prior to rbenv installation, as the two version managers are incompatible.
-  * On MacOS you can install `rbenv` with homebrew
-* Install Ruby version 2.5.1  with `rbenv install 2.5.1` (this might take a few minutes, as Ruby is being compiled)
+* In the newly cloned folder, check the Ruby version: `ruby --version`. It should be `2.7.2`. Other Ruby versions might work, but this one was tested.
+* If the correct Ruby version is not used, install a ruby version manager, either [rbenv](https://github.com/rbenv/rbenv#installation) (recommended) or [RVM](https://rvm.io/).
+* Install the required Ruby version (e.g. `rbenv install 2.7.2`, might take a few minutes)
 * The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
 
 ### Option 2: WSL in Windows 10
