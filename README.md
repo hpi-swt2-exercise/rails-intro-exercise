@@ -24,6 +24,7 @@ Follow these steps to complete the software and the exercise:
 * Inside the directory, check the used Ruby version using `ruby --version`. It should be `2.5.1`. Other Ruby versions might work, but this is the one that was tested.
 * If the correct Ruby version is not used, install a ruby version manager, for example [rbenv](https://github.com/rbenv/rbenv) using the instructions for [rbenv installation](https://github.com/rbenv/rbenv#basic-github-checkout) and [ruby-build installation](https://github.com/rbenv/ruby-build#installing-as-an-rbenv-plugin-recommended).
   * WARNING: If you already have the Ruby version manager [RVM](https://rvm.io/) installed, please use that or uninstall it prior to rbenv installation, as the two version managers are incompatible.
+  * On MacOS you can install `rbenv` with homebrew
 * Install Ruby version 2.5.1  with `rbenv install 2.5.1` (this might take a few minutes, as Ruby is being compiled)
 * The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
 
