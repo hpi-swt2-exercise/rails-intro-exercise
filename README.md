@@ -17,11 +17,12 @@ Follow these steps to complete the software and the exercise:
 ## 2) Set up local development environment
 
 * Clone your exercise repository to your local machine using `git clone`. You might want to clone using [SSH](https://github.com/settings/ssh/new) instead of HTTPS, to avoid having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
+* You can follow the how-tos offered by [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) to [generate a new SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and to [add it to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
 * Please let the teaching team/your fellow students know if there are problems. Most likely someone else has had similar issues already and can help.
 
 ### Option 1: Local setup on Linux or MacOS
 * In the newly cloned folder, check the Ruby version: `ruby --version`. It should be `2.7.2`. Other Ruby versions might work, but this one was tested.
-* If the correct Ruby version is not used, install a ruby version manager, either [rbenv](https://github.com/rbenv/rbenv#installation) (recommended) or [RVM](https://rvm.io/).
+* If the correct Ruby version is not used, install a ruby version manager, either [rbenv](https://github.com/rbenv/rbenv#installation) and [ruby-build](https://github.com/rbenv/ruby-build#readme) (recommended) or [RVM](https://rvm.io/).
 * Install the required Ruby version (e.g. `rbenv install 2.7.2`, might take a few minutes)
 * The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
 
