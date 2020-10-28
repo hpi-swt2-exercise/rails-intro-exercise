@@ -1,17 +1,24 @@
+from __future__ import print_function
 import logging, os, requests, sys
 
-logging.basicConfig(level=logging.DEBUG) #logging.WARNING
-log = logging.getLogger(__name__)
+logging.basicConfig(level=logging.WARNING)
+# logging.basicConfig(level=logging.DEBUG)
 
-repo = os.environ.get('TRAVIS_REPO_SLUG')
-url = "https://github.com/%s/issues" % repo
+repo_env_var = 'TRAVIS_REPO_SLUG'
+repo = os.environ.get(repo_env_var)
+logging.debug("repo: '{repo}'".format(repo=repo))
+if not repo:
+	logging.error("Could not fetch env var {var}".format(var=repo_env_var))
+url = "https://github.com/{repo}/issues".format(repo=repo)
 
 try:
-	log.debug("pinging github issues: {url}".format(url=url))
+	logging.info("Pinging GitHub issues: {url}".format(url=url))
 	r = requests.head(url)
 	if r.status_code != 200:
-		log.warning("Issues not enabled! ({code})".format(code=r.status_code))
+		logging.warning("Issues not enabled (or repo is private)! ({code})".format(code=r.status_code))
 		sys.exit(1)
 except requests.ConnectionError:
-	print("failed to connect")
+	logging.error("Failed to connect to {url}".format(url=url))
 	sys.exit(1)
+
+print("All good! Issues of '{repo}' seem enabled.".format(repo=repo))
