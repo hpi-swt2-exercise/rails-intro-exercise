@@ -21,7 +21,8 @@ gem 'turbolinks', '~> 5' # https://github.com/turbolinks/turbolinks
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails', '~> 3.8'
+  # Rails 6 needs at least version 4.0: https://github.com/rspec/rspec-rails/issues/2177
+  gem 'rspec-rails', '>= 4.0' # https://github.com/rspec/rspec-rails
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   # State of the art fixtures
