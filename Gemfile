@@ -9,7 +9,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4' # https://github.com/rails/rails
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3' # https://github.com/sparklemotion/sqlite3-ruby
 # Use Puma as the app server
-gem 'puma', '~> 5.0', '>= 5.0.2' # https://github.com/puma/puma
+gem 'puma', '~> 5.3' # https://github.com/puma/puma
 # Minimal, modern embedded V8 for Ruby
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'mini_racer', platforms: :ruby # https://github.com/rubyjs/mini_racer
