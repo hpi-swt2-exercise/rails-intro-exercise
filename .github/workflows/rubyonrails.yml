@@ -1,0 +1,26 @@
+name: Rails
+
+on:
+  push:
+    branches: [ main ]
+jobs:
+  run-rails-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Ruby 2.7
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - name: Set up Node
+        uses: actions/setup-node@v1
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+          yarn install
+      - name: Run local tests
+        run: |
+          RAILS_ENV=test bundle exec rails db:migrate
+          bundle exec rspec spec/
