@@ -28,7 +28,7 @@ Follow these steps to complete the software and the exercise:
 * Please let the teaching team/your fellow students know if there are problems. Most likely someone else has had similar issues already and can help.
 
 #### Option 1: Local setup on Linux or MacOS
-* In the newly cloned folder, check the Ruby version: `ruby --version`. It should be `2.7.2`. Other Ruby versions might work, but this one was tested.
+* In the newly cloned folder, check the Ruby version: `ruby --version`. It should be higher than `2.5.0`.
 * If the correct Ruby version is not used, install a ruby version manager, either [rbenv](https://github.com/rbenv/rbenv#installation) and [ruby-build](https://github.com/rbenv/ruby-build#readme) (recommended) or [RVM](https://rvm.io/).
 * Install the required Ruby version (e.g. `rbenv install 2.7.2`, might take a few minutes)
 * The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
