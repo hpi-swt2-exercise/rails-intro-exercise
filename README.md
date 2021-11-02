@@ -1,6 +1,10 @@
-# SWT2 2020/21 - Introductory Exercise
+# Ruby on Rails Introductory Exercise
 
-This is an interactive exercise introducing the basics of web development with [Ruby on Rails 6](https://guides.rubyonrails.org/). It is used in the course [SWTII](https://hpi.de/plattner/teaching/winter-term-2020-21/softwaretechnik-ii-agile-software-development-in-large-teams.html). The exercise is partly based on the offical ["Getting Started with Rails"](https://guides.rubyonrails.org/getting_started.html) guide, so in case of getting stuck, that might be a good start to find solutions. The interactivity of this exercise is provided by opening issues in the GitHub issue tracker (through automation in a [CI server](https://en.wikipedia.org/wiki/Continuous_integration#Rationale)). The issues contain the currently failing test case and the corresponding error message as well as instructions on what tasks to tackle next.
+This is an interactive exercise introducing the basics of web development with [Ruby on Rails 6](https://guides.rubyonrails.org/). It is used in the course [SSE](https://hpi.de/plattner/teaching/winter-term-2021-22/scalable-software-engineering.html) at the [Hasso Plattner Institute](https://hpi.de/en/index.html).
+
+**The exercise is partly based on the offical ["Getting Started with Rails"](https://guides.rubyonrails.org/getting_started.html) guide, so in case of getting stuck, this is a good start to find solutions.**
+
+The interactivity of this exercise is provided by opening issues in the GitHub issue tracker. The issues contain the currently failing test case and the corresponding error message as well as instructions on what tasks to tackle next.
 
 This repository contains an application stub of an academic paper management system with a failing test case.
 
