@@ -88,6 +88,5 @@ rails s -b 0 #starting rails server, the -b part is necessary since the app is r
 * Run `rspec spec/<path_to_spec>.rb` to only run tests within a single file.
 * Have a look at `/spec/factories` to get inspiration for your data model.
 * Besides [generators](https://guides.rubyonrails.org/command_line.html#rails-generate) and scaffolds, [associations](https://guides.rubyonrails.org/association_basics.html) and [validations](https://guides.rubyonrails.org/active_record_validations.html) are needed.
-* Look at the Mockup: https://gomockingbird.com/mockingbird/index.html?project=v890g6l#v890g6l/OQMURm (author selection uses a multiple select in this version of the exercise),
 * `rails db:drop && rails db:migrate` deletes the database and recreates it. This might be helpful for error recovery.
 * Make sure that all local changes are committed (`git status`) and pushed to the upstream repository (i.e., the one on GitHub) before the deadline.
