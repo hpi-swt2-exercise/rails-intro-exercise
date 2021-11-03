@@ -10,6 +10,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Check prerequisites
+        run: |
+          python -V
+          pip -V
+          pip install -r travis/requirements.txt
+          python ./travis/try_issues.py
       - name: Set up Ruby 2.7
         uses: ruby/setup-ruby@v1 # https://github.com/ruby/setup-ruby
         with:
