@@ -5,20 +5,20 @@ on:
   workflow_dispatch:
 jobs:
   run-rails-tests:
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Set up Ruby 2.7
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1 # https://github.com/ruby/setup-ruby
         with:
-          ruby-version: 2.7
+          ruby-version: 2.7 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically, any step doing bundle install (for the root Gemfile) or gem install bundler can be removed with bundler-cache: true
       - name: Set up Node
         uses: actions/setup-node@v1
       - name: Install dependencies
         run: |
-          gem install bundler
-          bundle install --jobs 4 --retry 3
           yarn install
       - name: Run local tests
         run: |
