@@ -33,7 +33,7 @@ This repository contains an application stub of an academic paper management sys
 * Follow the local setup instructions above
 
 #### Option 3: Use a Virtual Machine
-* We recommend [Virtualbox](https://www.virtualbox.org) (as a VM provider) and [Vagrant](https://gorails.com/guides/using-vagrant-for-rails-development) (to manage VMs) in combination with a Linux VM.
+* We recommend [Virtualbox](https://www.virtualbox.org) (as a VM provider) and [Vagrant](https://gorails.com/guides/using-vagrant-for-rails-development) (to manage VMs) in combination with Linux.
 * Any other container solution, such as [Docker](https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development) will also work.
 * In the container, follow the Linux install instructions.
 * In the VM/container run the Rails server and share the file system to use the locally installed tools:
