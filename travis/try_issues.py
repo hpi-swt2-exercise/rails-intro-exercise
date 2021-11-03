@@ -1,10 +1,10 @@
 from __future__ import print_function
 import logging, os, requests, sys
 
-logging.basicConfig(level=logging.WARNING)
+logging.basicConfig(level=logging.INFO)
 # logging.basicConfig(level=logging.DEBUG)
 
-repo_env_var = 'TRAVIS_REPO_SLUG'
+repo_env_var = 'GITHUB_REPOSITORY'
 repo = os.environ.get(repo_env_var)
 logging.debug("repo: '{repo}'".format(repo=repo))
 if not repo:
