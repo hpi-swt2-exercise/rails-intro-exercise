@@ -29,7 +29,6 @@ This repository contains an application stub of an academic paper management sys
 
 #### Option 2: WSL in Windows
 * Install the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)
-* Install [Ubuntu](https://gorails.com/setup/windows/10)
 * Follow the local setup instructions above
 
 #### Option 3: Use a Virtual Machine
