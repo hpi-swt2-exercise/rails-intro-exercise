@@ -30,7 +30,7 @@ You can choose how to setup your local development environment:
 * Any other container solution, such as [Docker](https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development) will also work.
 * You may want to share the file system to use your locally installed tools.
 
-**After you hav access to a Linux-like shell:**
+**After you have access to a Linux-like shell:**
 
 * Clone your exercise repository to your local machine using `git clone`. Cloning via [SSH](https://github.com/settings/ssh/new) instead of HTTPS avoids having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
   * You can follow the how-tos offered by [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) to [generate a new SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and to [add it to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
