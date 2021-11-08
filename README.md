@@ -17,7 +17,7 @@ This repository contains an application stub of an academic paper management sys
 
 ### 2) Set up local development environment
 
-You can choose how to setup your local development environment:
+Three options to setup your local Ruby on Rails development environment:
 
 #### Option 1: Local setup on Linux or MacOS
 * You install Ruby (on Rails) on your OS, like any other software
