@@ -34,7 +34,7 @@ You can choose how to setup your local development environment:
 
 * Clone your exercise repository to your local machine using `git clone`. Cloning via [SSH](https://github.com/settings/ssh/new) instead of HTTPS avoids having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
   * You can follow the how-tos offered by [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) to [generate a new SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and to [add it to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
-* In the newly cloned folder, check the Ruby version: `ruby --version`. It should be `2.7.4` (or higher). Previous versions (up to 2.5.0 *should* work, but aren't tested.)
+* In the newly cloned folder, check the Ruby version: `ruby --version`. It should be `2.7.4` (or higher). Previous versions (down to 2.5.0 *should* work, but aren't tested.)
 * If the correct Ruby version is not used, install a ruby version manager: either [rbenv](https://github.com/rbenv/rbenv#installation) (with [ruby-build](https://github.com/rbenv/ruby-build#readme)) (recommended) *or* [RVM](https://rvm.io/).
 * Install the required Ruby version (e.g. `rbenv install 2.7.4`, might take a few minutes)
 * The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
