@@ -2,7 +2,7 @@
 
 This is an interactive exercise introducing the basics of web development with [Ruby on Rails 6.0](https://guides.rubyonrails.org/v6.0) (*not the latest 6.1.4 release*). It is used in the course [SSE](https://hpi.de/plattner/teaching/winter-term-2021-22/scalable-software-engineering.html) at the [Hasso Plattner Institute](https://hpi.de/en/index.html).
 
-**The exercise is inspired by the offical ["Getting Started with Rails"](https://guides.rubyonrails.org/v6.0/getting_started.html) guide, so in case of getting stuck, this is a good start to find solutions.**
+**The exercise is inspired by the offical ["Getting Started with Rails" v6.0](https://guides.rubyonrails.org/v6.0/getting_started.html) guide, so in case of getting stuck, this is a good start to find solutions.**
 
 The interactivity of this exercise is provided by opening issues in the GitHub issue tracker. The issues contain details of the feature to tackle next as well as the currently failing test case and the corresponding error message.
 
