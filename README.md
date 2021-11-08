@@ -17,37 +17,35 @@ This repository contains an application stub of an academic paper management sys
 
 ### 2) Set up local development environment
 
-* Clone your exercise repository to your local machine using `git clone`. Cloning via [SSH](https://github.com/settings/ssh/new) instead of HTTPS avoids having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
-  * You can follow the how-tos offered by [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) to [generate a new SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and to [add it to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
-* Please let the teaching team/your fellow students know if there are problems. Most likely someone else has had similar issues already and can help.
+You can choose how to setup your local development environment:
 
 #### Option 1: Local setup on Linux or MacOS
-* In the newly cloned folder, check the Ruby version: `ruby --version`. It should be `2.7.4` (or higher). Previous versions (up to 2.5.0 *should* work, but aren't tested.)
-* If the correct Ruby version is not used, install a ruby version manager: either [rbenv](https://github.com/rbenv/rbenv#installation) (with [ruby-build](https://github.com/rbenv/ruby-build#readme)) (recommended) *or* [RVM](https://rvm.io/).
-* Install the required Ruby version (e.g. `rbenv install 2.7.4`, might take a few minutes)
-* The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
+* You install Ruby (on Rails) on your OS, like any other software
 
 #### Option 2: WSL in Windows
 * Install the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)
-* Follow the local setup instructions above
 
 #### Option 3: Use a Virtual Machine
 * We recommend [Virtualbox](https://www.virtualbox.org) (as a VM provider) and [Vagrant](https://gorails.com/guides/using-vagrant-for-rails-development) (to manage VMs) in combination with Linux.
 * Any other container solution, such as [Docker](https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development) will also work.
-* In the container, follow the Linux install instructions.
-* In the VM/container run the Rails server and share the file system to use the locally installed tools:
-```
-vagrant ssh #connect with VM
-cd <app_folder>
-rails s -b 0 # -b required to not drop requests coming from host OS
-```
+* You may want to share the file system to use your locally installed tools.
+
+**After you hav access to a Linux-like shell:**
+
+* Clone your exercise repository to your local machine using `git clone`. Cloning via [SSH](https://github.com/settings/ssh/new) instead of HTTPS avoids having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
+  * You can follow the how-tos offered by [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) to [generate a new SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and to [add it to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+* In the newly cloned folder, check the Ruby version: `ruby --version`. It should be `2.7.4` (or higher). Previous versions (up to 2.5.0 *should* work, but aren't tested.)
+* If the correct Ruby version is not used, install a ruby version manager: either [rbenv](https://github.com/rbenv/rbenv#installation) (with [ruby-build](https://github.com/rbenv/ruby-build#readme)) (recommended) *or* [RVM](https://rvm.io/).
+* Install the required Ruby version (e.g. `rbenv install 2.7.4`, might take a few minutes)
+* The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
+* Please let the teaching team/your fellow students know if there are problems. Most likely someone else has had similar issues already and can help.
 
 ### 3) Dive into the code
 
 * Run `bundle install` to install the dependencies of the project (they are stored in the `Gemfile`)
   * If the `bundle` command was not found, install bundler with `gem install bundler`
 * Run `rails db:migrate RAILS_ENV=development && rails db:migrate RAILS_ENV=test` to migrate the database
-* Start the development server (`rails s`) and check that the application runs (default: `http://localhost:3000/`)
+* Start the development server (`rails s`) and check that the application runs (default: `http://localhost:3000/`). When running in WSL/container: `rails s -b 0 # -b required to not drop requests coming from host OS`
 * Run `bundle exec rspec` to run the tests ([RSpec](http://rspec.info/) is a test framework for Ruby)
 * Write code to get the failing test to pass.
 
