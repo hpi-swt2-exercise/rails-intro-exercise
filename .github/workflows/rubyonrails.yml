@@ -15,10 +15,10 @@ jobs:
           pip -V
           pip install -r ./.github/workflows/requirements.txt
           python ./.github/workflows/try_issues.py
-      - name: Set up Ruby 2.7
+      - name: Set up Ruby 2.7.4
         uses: ruby/setup-ruby@v1 # https://github.com/ruby/setup-ruby
         with:
-          ruby-version: 2.7 # Not needed with a .ruby-version file
+          ruby-version: 2.7.4 # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically, any step doing bundle install (for the root Gemfile) or gem install bundler can be removed with bundler-cache: true
       - name: Set up Node
         uses: actions/setup-node@v1
