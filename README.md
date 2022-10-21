@@ -57,7 +57,7 @@ Three options to setup your local Ruby on Rails development environment:
 ### 5) Check your inbox / issues
 
 * You will be notified of problems or new  work items via GitHub issues on your repository.
-* While you wait, see where you could refactor your code, read the [tutorial](https://guides.rubyonrails.org/getting_started.html), or explore the project files.
+* While you wait, continue to read the [Guide](https://guides.rubyonrails.org/v6.0/getting_started.html), or explore the project files.
 
 ### 6) For each issue
 
@@ -73,7 +73,7 @@ Three options to setup your local Ruby on Rails development environment:
 ## Tips
 
 * The main goal of this exercise is to learn the basics of Ruby on Rails. **Don't hesitate to ask the teaching team or your fellow students for help!**
-* The beginning of this exercise is based on the official [Getting Started with Rails Guide](https://guides.rubyonrails.org/getting_started.html). When stuck, this should be your first read.
+* The beginning of this exercise is based on the official ["Getting Started with Rails" Guide (v6.0, **not** 7.0)](https://guides.rubyonrails.org/v6.0/getting_started.html). When stuck, this should be your first read.
 * `rails s` starts the development server (by default on http://localhost:3000) so you can try out your app in the browser.
 * `rails routes` shows all available routes of the application.
 * For help with RSpec matchers, there is a [Cheat Sheet](https://devhints.io/capybara#rspec) or the [documentation](http://www.rubydoc.info/github/teamcapybara/capybara/#Querying)
