@@ -1,12 +1,12 @@
 # Ruby on Rails Introductory Exercise
 
-This is an interactive exercise introducing the basics of web development with [Ruby on Rails 6.0](https://guides.rubyonrails.org/v6.0) (*not the latest 6.1.4 release*). It is used in the course [SSE](https://hpi.de/plattner/teaching/winter-term-2021-22/scalable-software-engineering.html) at the [Hasso Plattner Institute](https://hpi.de/en/index.html).
+This is an interactive exercise introducing the basics of web development with [Ruby on Rails 7.0](https://guides.rubyonrails.org/v7.0/). It is used in the course [SSE](https://hpi.de/plattner/teaching/winter-term-2022-23/scalable-software-engineering.html) at the [Hasso Plattner Institute](https://hpi.de/en/index.html).
 
-**The exercise is inspired by the offical ["Getting Started with Rails" v6.0](https://guides.rubyonrails.org/v6.0/getting_started.html) guide, so in case of getting stuck, this is a good start to find solutions.**
+**This exercise is inspired by the offical ["Getting Started with Rails" guide (v7.0)](https://guides.rubyonrails.org/v7.0/getting_started.html), so in case of getting stuck, this is a good starting point to find solutions.**
 
 The interactivity of this exercise is provided by opening issues in the GitHub issue tracker. The issues contain details of the feature to tackle next as well as the currently failing test case and the corresponding error message.
 
-This repository contains an application stub of an academic paper management system with a failing test case. Follow these steps to complete the software and the exercise:
+This repository contains an application stub of an **academic paper management system** with a failing test case. Follow these steps to complete the software and the exercise:
 
 ## Exercise Steps
 
@@ -34,7 +34,7 @@ Three options to setup your local Ruby on Rails development environment:
 
 * Clone your exercise repository using `git clone`. Cloning via [SSH](https://github.com/settings/ssh/new) instead of HTTPS avoids having to [type credentials when pushing](https://help.github.com/en/github/using-git/which-remote-url-should-i-use).
   * You can follow the how-tos offered by [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) to [generate a new SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and to [add it to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
-* In the newly cloned folder (`cd` into it), check the Ruby version: `ruby --version`. It should be `2.7.4` (or higher). Previous versions (down to 2.5.0 *should* work, but aren't tested.)
+* In the newly cloned folder (`cd` into it), check the Ruby version: `ruby --version`. It should be `2.7.4` (or higher).
 * If the correct Ruby version is not used, install a ruby version manager: either [rbenv](https://github.com/rbenv/rbenv#installation) including [ruby-build](https://github.com/rbenv/ruby-build#readme)) (recommended) *or* [RVM](https://rvm.io/).
 * Install the required Ruby version: e.g. `rbenv install 2.7.4` (might take a few minutes, requires *ruby-build*)
 * The `.ruby_version` file in the repository instructs the ruby version manager to use the correct version.
@@ -72,7 +72,7 @@ Three options to setup your local Ruby on Rails development environment:
 
 ## Tips
 
-* This exercise is not graded, the main goal is to learn the basics of Ruby on Rails. **Don't hesitate to ask the teaching team or your fellow students for help!**
+* The main goal of this exercise is to learn the basics of Ruby on Rails. **Don't hesitate to ask the teaching team or your fellow students for help!**
 * The beginning of this exercise is based on the official [Getting Started with Rails Guide](https://guides.rubyonrails.org/getting_started.html). When stuck, this should be your first read.
 * `rails s` starts the development server (by default on http://localhost:3000) so you can try out your app in the browser.
 * `rails routes` shows all available routes of the application.
