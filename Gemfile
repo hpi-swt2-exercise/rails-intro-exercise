@@ -21,8 +21,15 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 # Reduces boot times through caching; required in config/boot.rb [https://github.com/Shopify/bootsnap]
 gem 'bootsnap', require: false
+# Get rid of warnings: https://stackoverflow.com/questions/67773514/
+gem "net-http"
 
 group :development, :test do
+  # RSpec testing framework to Ruby on Rails as alternative to its default testing framework
+  # Adding it to the :development group is not strictly necessary, but without it, generators and rake tasks must be preceded by RAILS_ENV=test
+  # rspec-rails 6.x for Rails 6.1 or 7.x [https://github.com/rspec/rspec-rails]
+  gem 'rspec-rails', '~> 6.0.0'
+  # State of the art fixtures [https://github.com/thoughtbot/factory_bot_rails]
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[ mri mingw x64_mingw ]
 end
@@ -38,10 +45,6 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-  # RSpec testing framework to Ruby on Rails as alternative to its default testing framework
-  # rspec-rails 6.x for Rails 6.1 or 7.x [https://github.com/rspec/rspec-rails]
-  gem 'rspec-rails', '~> 6.0.0'
-  # State of the art fixtures [https://github.com/thoughtbot/factory_bot_rails]
   gem 'factory_bot_rails'
 end
 
