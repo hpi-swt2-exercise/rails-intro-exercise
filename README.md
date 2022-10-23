@@ -1,6 +1,6 @@
 # Ruby on Rails Introductory Exercise
 
-This is an interactive exercise introducing web development with Ruby on Rails 7.0 based on the [v6.0 Rails Guide](https://guides.rubyonrails.org/v6.0/getting_started.html). It is used in HPI's [SSE course](https://hpi.de/plattner/teaching/winter-term-2022-23/scalable-software-engineering.html).
+This is an interactive exercise introducing web development with Ruby on Rails 7.0 based on the [v6.0 Rails Guide](https://guides.rubyonrails.org/v6.0/getting_started.html). It is used in HPI's [Scalable Software Engineerung course](https://hpi.de/plattner/teaching/winter-term-2022-23/scalable-software-engineering.html).
 
 **This exercise is inspired by the offical ["Getting Started with Rails" Guide in version 6.0](https://guides.rubyonrails.org/v6.0/getting_started.html) (explictly in version 6.0, v7.0 is different). So in case of getting stuck, the v6.0 guide is a good starting point to find solutions.**
 
