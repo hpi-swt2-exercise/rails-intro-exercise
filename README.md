@@ -13,7 +13,10 @@ This repository contains an application stub of an **academic paper management s
 ### 1) Set up your repository
 
 * Ensure that the issue tracker of your repository is active (i.e. an "Issues" tab is visible). If not, activate it in the `Settings` tab on the GitHub website.
-<img src="./.github/gh_issues_setting.png" alt="drawing" width="600"/>
+<img src="./.github/gh_issues_setting.png" alt="issue tracker" width="600"/>
+
+* Ensure that GitHub Actions, the Continuous Integration service that runs tests and facilitates the exercise, is active. If not, [activate it](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow#enabling-a-workflow) on the `Actions` tab.
+<img src="https://docs.github.com/assets/cb-193456/images/help/repository/actions-enable-workflow-2022.png" alt="active GitHub actions" width="600"/>
 
 ### 2) Set up local development environment
 
