@@ -1,6 +1,6 @@
 # Ruby on Rails Introductory Exercise
 
-This is an interactive exercise introducing web development with Ruby on Rails 7.0 based on the [v6.0 Rails Guide](https://guides.rubyonrails.org/v6.0/getting_started.html). It is used in HPI's [SSE course](https://hpi.de/plattner/teaching/winter-term-2022-23/scalable-software-engineering.html).
+This is an interactive exercise introducing web development with Ruby on Rails 7.0 based on the [v6.0 Rails Guide](https://guides.rubyonrails.org/v6.0/getting_started.html). It is used in HPI's [Scalable Software Engineerung course](https://hpi.de/plattner/teaching/winter-term-2022-23/scalable-software-engineering.html).
 
 **This exercise is inspired by the offical ["Getting Started with Rails" Guide in version 6.0](https://guides.rubyonrails.org/v6.0/getting_started.html) (explictly in version 6.0, v7.0 is different). So in case of getting stuck, the v6.0 guide is a good starting point to find solutions.**
 
@@ -13,7 +13,10 @@ This repository contains an application stub of an **academic paper management s
 ### 1) Set up your repository
 
 * Ensure that the issue tracker of your repository is active (i.e. an "Issues" tab is visible). If not, activate it in the `Settings` tab on the GitHub website.
-<img src="./.github/gh_issues_setting.png" alt="drawing" width="600"/>
+<img src="./.github/gh_issues_setting.png" alt="issue tracker" width="600"/>
+
+* Ensure that GitHub Actions, the Continuous Integration service that runs tests and facilitates the exercise, is active. If not, [activate it](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow#enabling-a-workflow) on the `Actions` tab.
+<img src="https://docs.github.com/assets/cb-193456/images/help/repository/actions-enable-workflow-2022.png" alt="active GitHub actions" width="600"/>
 
 ### 2) Set up local development environment
 
